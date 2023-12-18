@@ -5,3 +5,14 @@
 4. telegram-desktop
 5. vlc
 6. arandr
+7. blueman
+8. 'C Development Tools and Libraries'
+9. python3-pip
+10. python3-devel
+11. neovim
+12. alacritty
+13. fish
+
+## Rust list
+bat eza ripgrep zoxide fnm
+joshuto --version 0.9.4
