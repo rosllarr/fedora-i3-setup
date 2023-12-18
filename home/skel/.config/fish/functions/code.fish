@@ -1,4 +1,4 @@
 function code --wraps=code-insider
-  code-insiders --enable-features=UseOzonePlatform --ozone-platform=wayland $argv
+  code-insiders $argv
 
 end
