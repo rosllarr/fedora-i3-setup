@@ -92,8 +92,8 @@ cp $home_skel/.config/i3/config $i3_home/config
 #######################
 # nerd_fonts_home=$HOME/.nerd-fonts
 # if [ ! -d $nerd_fonts_home ]; then
-# 	git clone https://github.com/ryanoasis/nerd-fonts.git ~/.nerd-fonts
-# 	bash ~/.nerd-fonts/install.sh
+	# 	git clone https://github.com/ryanoasis/nerd-fonts.git ~/.nerd-fonts
+	# 	bash ~/.nerd-fonts/install.sh
 # fi
 
 ################
@@ -210,7 +210,7 @@ fi
 # disable beep #
 ################
 if [ ! -f /etc/systemd/system/disable-pcspkr.service ]; then
-	sudo cp $etc_skel/etc/systemd/system/disable-pcspkr.service /etc/systemd/system/disable-pcspkr.service
+	sudo cp $etc_skel/systemd/system/disable-pcspkr.service /etc/systemd/system/disable-pcspkr.service
 	sudo systemctl enable --now disable-pcspkr.service
 fi
 
@@ -238,7 +238,7 @@ fi
 ##################
 # install vscode #
 ##################
-check_vscode_exists=$(rpm -qa | rg code-insiderr | wc -l )
+check_vscode_exists=$(rpm -qa | rg code-insiders | wc -l )
 expect=1
 if [ ! $check_vscode_exists == $expect ]; then
 	wget https://vscode.download.prss.microsoft.com/dbazure/download/insider/279872bd965e4030c81129a9bf1ce1710ff7cd55/code-insiders-1.86.0-1702879157.el7.x86_64.rpm
