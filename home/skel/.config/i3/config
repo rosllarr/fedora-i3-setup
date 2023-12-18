@@ -46,20 +46,20 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec alacritty
-bindsym $mod+Shift+t exec alacritty
+bindsym $mod+Shift+Tab exec alacritty
 
 # start a applications
-bindsym $mod+Shift+r exec firefox
+bindsym $mod+Shift+f exec firefox
 bindsym $mod+Shift+g exec google-chrome
 bindsym $mod+Shift+z exec keepassxc
-bindsym $mod+Shift+b exec telegram-desktop
+bindsym $mod+Shift+r exec telegram-desktop
 bindsym Print exec flameshot gui
 
 # set external monitor to 2k top
 bindsym $mod+Shift+grave exec 2k
 
 # kill focused window
-bindsym $mod+Shift+Tab kill
+bindsym $mod+Shift+t kill
 
 # start dmenu (a program launcher)
 bindsym $mod+grave exec --no-startup-id "dmenu_run -nf '#BBBBBB' -nb '#222222' -sb '#005577' -sf '#EEEEEE' -fn 'monospace-10'"
