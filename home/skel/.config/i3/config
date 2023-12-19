@@ -53,6 +53,7 @@ bindsym $mod+Shift+r exec firefox
 bindsym $mod+Shift+g exec google-chrome
 bindsym $mod+Shift+z exec keepassxc
 bindsym $mod+Shift+b exec telegram-desktop
+bindsym Print exec flameshot gui
 
 # set external monitor to 2k top
 bindsym $mod+Shift+grave exec 2k
