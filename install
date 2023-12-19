@@ -246,5 +246,10 @@ if [ ! $check_vscode_exists == $expect ]; then
     rm -rf code-insiders-1.86.0-1702879157.el7.x86_64.rpm
 fi
 
+#######################
+# set keyboard layout #
+#######################
+sudo cp $etc_skel/X11/xorg.conf.d/00-keyboard.conf /etc/X11/xorg.conf.d/00-keyboard.conf
+
 
 echo "Manual run -- fnm install"
