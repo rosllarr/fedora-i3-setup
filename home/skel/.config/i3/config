@@ -50,7 +50,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec alacritty
-bindsym $mod+Shift+Tab exec alacritty
+bindsym $mod+Shift+t exec alacritty
 
 # start a applications
 bindsym $mod+Shift+f exec firefox
@@ -67,7 +67,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%-
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +10%
 
 # kill focused window
-bindsym $mod+Shift+t kill
+bindsym $mod+Shift+Tab kill
 
 # start dmenu (a program launcher)
 bindsym $mod+grave exec --no-startup-id "dmenu_run -nf '#BBBBBB' -nb '#222222' -sb '#005577' -sf '#EEEEEE' -fn 'monospace-10'"
