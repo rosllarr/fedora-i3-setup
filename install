@@ -214,6 +214,14 @@ if [ ! -f /etc/systemd/system/disable-pcspkr.service ]; then
 	sudo systemctl enable --now disable-pcspkr.service
 fi
 
+####################
+# disable touchpad #
+####################
+if [ ! -f /etc/systemd/system/disable-touchpad.service ]; then
+	sudo cp $etc_skel/systemd/system/disable-touchpad.service /etc/systemd/system/disable-touchpad.service
+	sudo systemctl enable --now disable-touchpad.service
+fi
+
 ###################
 # install postman #
 ###################
