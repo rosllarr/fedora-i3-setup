@@ -90,11 +90,11 @@ cp $home_skel/.config/i3/config $i3_home/config
 #######################
 # install nerd fronts #
 #######################
-nerd_fonts_home=$HOME/.nerd-fonts
-if [ ! -d $nerd_fonts_home ]; then
-	git clone https://github.com/ryanoasis/nerd-fonts.git ~/.nerd-fonts
-	bash ~/.nerd-fonts/install.sh
-fi
+# nerd_fonts_home=$HOME/.nerd-fonts
+# if [ ! -d $nerd_fonts_home ]; then
+# 	git clone https://github.com/ryanoasis/nerd-fonts.git ~/.nerd-fonts
+# 	bash ~/.nerd-fonts/install.sh
+# fi
 
 ################
 # install Node #
