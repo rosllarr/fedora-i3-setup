@@ -1,9 +1,0 @@
-[Unit]
-Description=Alway disable touchpad
-
-[Service]
-ExecStart=/usr/local/bin/disable-touchpad
-Type=simple
-
-[Install]
-WantedBy=default.target
