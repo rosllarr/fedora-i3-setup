@@ -16,3 +16,6 @@
 ## Rust list
 bat eza ripgrep zoxide fnm
 joshuto --version 0.9.4
+
+## Go list
+fzf
