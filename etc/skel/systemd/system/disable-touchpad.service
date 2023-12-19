@@ -1,0 +1,11 @@
+[Unit]
+Description=Alway disable touchpad
+
+[Service]
+ExecStart=xinput disable 'ELAN1200:00 04F3:309F Touchpad' && \
+          xinput disable 'ETPS/2 Elantech Touchpad' && \
+          xinput disable 'PS/2 Logitech Wheel Mouse'
+Type=simple
+
+[Install]
+WantedBy=default.target

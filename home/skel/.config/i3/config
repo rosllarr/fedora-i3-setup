@@ -34,10 +34,6 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
-# Disable touchpad
-exec --no-startup-id xinput disable 'ETPS/2 Elantech Touchpad'
-exec --no-startup-id xinput disable 'PS/2 Logitech Wheel Mouse'
-
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -56,7 +52,8 @@ bindsym $mod+Shift+t exec alacritty
 bindsym $mod+Shift+f exec firefox
 bindsym $mod+Shift+g exec google-chrome
 bindsym $mod+Shift+z exec keepassxc
-bindsym $mod+Shift+r exec telegram-desktop
+bindsym $mod+Shift+b exec telegram-desktop
+bindsym $mod+Shift+r exec thunar
 bindsym Print exec flameshot gui
 
 # set external monitor to 2k top
