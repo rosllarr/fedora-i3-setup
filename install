@@ -56,8 +56,8 @@ if [ ! $check_repo_exists == $expect ]; then
 fi
 
 sudo dnf groupinstall -y 'C Development Tools and Libraries'
-sudo dnf install -y $(cat packages-lists)
-pip3 install --user -r python-packages
+sudo dnf install -y $(cat install_package)
+pip3 install --user -r python_package
 
 ################
 # install rust #
