@@ -214,14 +214,6 @@ if [ ! -f /etc/systemd/system/disable-pcspkr.service ]; then
 	sudo systemctl enable --now disable-pcspkr.service
 fi
 
-####################
-# disable touchpad #
-####################
-if [ ! -f /etc/systemd/system/disable-touchpad.service ]; then
-	sudo cp $etc_skel/systemd/system/disable-touchpad.service /etc/systemd/system/disable-touchpad.service
-	sudo systemctl enable --now disable-touchpad.service
-fi
-
 ###################
 # install postman #
 ###################
@@ -258,6 +250,11 @@ fi
 # set keyboard layout #
 #######################
 sudo cp $etc_skel/X11/xorg.conf.d/00-keyboard.conf /etc/X11/xorg.conf.d/00-keyboard.conf
+
+################
+# set touchpad #
+################
+sudo cp $etc_skel/X11/xorg.conf.d/03-touchpad.conf /etc/X11/xorg.conf.d/03-touchpad.conf
 
 
 echo "Manual run -- fnm install"
