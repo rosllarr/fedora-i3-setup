@@ -1,0 +1,12 @@
+#!/usr/bin/bash
+
+##################################
+# set external monitor to top 2k #
+##################################
+check_host=$(cat /etc/hostname)
+
+if [ $check_host == 'x13' ]; then
+	bash /usr/local/bin/x13_2k
+elif [ $check_host == 'x509' ]; then
+    bash /usr/local/bin/x509_2k
+fi

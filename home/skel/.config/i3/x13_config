@@ -1,0 +1,8 @@
+include ~/.config/i3/base_config
+
+# external monitor mapping
+workspace 1 output HDMI-A-0
+workspace 2 output HDMI-A-0
+workspace 3 output HDMI-A-0
+workspace 4 output HDMI-A-0
+workspace 5 output eDP
