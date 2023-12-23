@@ -90,7 +90,7 @@ fi
 if [ $check_host == 'x13' ]; then
 	cp $home_skel/.config/i3/x13_config $i3_home/config
 elif [ $check_host == 'x509' ]; then
-	cp $home_skel/.config/i3/509_config $i3_home/config
+	cp $home_skel/.config/i3/x509_config $i3_home/config
 fi
 
 cp $home_skel/.config/i3/base_config $i3_home/base_config
