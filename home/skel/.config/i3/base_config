@@ -62,6 +62,8 @@ bindsym Print exec flameshot gui
 
 # set external monitor to 2k top
 bindsym $mod+Shift+grave exec 2k
+# set internal monitor only
+bindsym $mod+Control+grave exec 0k
 
 # set brightness level
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%-
